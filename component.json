@@ -1,0 +1,10 @@
+{
+  "name": "app",
+  "private": true,
+  "paths": ["client"],
+  "please note": "local will be locals. fuck you wryk",
+  "local": ["boot"],
+  "dependencies": {
+    "visionmedia/jade": "1.3.1"
+  }
+}

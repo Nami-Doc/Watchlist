@@ -1,0 +1,5 @@
+{
+  "scripts": ["index.ls"],
+  "templates": ["template.jade"],
+  "styles": ["boot.styl"]
+}
