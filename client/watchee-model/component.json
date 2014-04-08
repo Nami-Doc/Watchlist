@@ -1,7 +1,7 @@
 {
   "scripts": ["index.ls"],
   "dependencies": {
-  	"modella/modella": "0.2.8",
-  	"alexmingoia/modella-memory": "0.2.0"
+    "modella/modella": "0.2.8",
+    "alexmingoia/modella-memory": "0.2.0"
   }
 }
