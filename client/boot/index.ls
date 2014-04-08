@@ -1,4 +1,8 @@
-template = require './template.html'
+require! <[ watchee-router
+			./template.html ]>
 
 module.exports = (div) ->
 	div.innerHTML = template!
+
+	# start routers
+	watchee-router.start! # .listen ?

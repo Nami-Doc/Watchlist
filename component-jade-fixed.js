@@ -7,6 +7,10 @@ module.exports = function (builder) {
 	// This seems to work, but it very well might fail due to race conditions
 	// Let's see what happens next ...
 
+	// NOTE (2) :
+	// Another option would be to compile scripts."*.jade" with compileClient
+	// and templates."*.jade" with render
+
 	builder.hook('before templates', function (pkg, next) {
 		if (pkg.config.templates === undefined) {
 			return next();

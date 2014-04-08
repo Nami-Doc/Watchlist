@@ -1,9 +1,13 @@
 {
   "name": "app",
   "private": true,
-  "paths": ["client"],
+  "paths": [
+    "client"
+  ],
   "please note": "local will be locals. fuck you wryk",
-  "local": ["boot"],
+  "local": [
+    "boot"
+  ],
   "dependencies": {
     "visionmedia/jade": "1.3.1"
   }

@@ -1,0 +1,7 @@
+{
+  "scripts": ["index.ls"],
+  "templates": ["template.jade"],
+  "dependencies": {
+    "component/reactive": "1.1.0"
+  }
+}

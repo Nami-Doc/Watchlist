@@ -1,0 +1,7 @@
+{
+  "scripts": ["index.ls"],
+  "dependencies": {
+    "ianstormtaylor/router": "*",
+    "modella/modella": "*"
+  }
+}

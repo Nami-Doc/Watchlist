@@ -1,0 +1,11 @@
+{
+  "scripts": ["index.ls"],
+  "local": [
+    "watchee-model",
+    "watchee-list",
+    "router-set-context"
+  ],
+  "dependencies": {
+    "ianstormtaylor/router": "0.6.2"
+  }
+}
