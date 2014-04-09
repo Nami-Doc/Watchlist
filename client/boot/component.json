@@ -1,6 +1,6 @@
 {
-  "scripts": ["index.ls"],
-  "templates": ["template.jade"],
+  "scripts": ["index.ls",
+    "template.jade"],
   "styles": ["boot.styl"],
   "local": [
     "watchee-router"

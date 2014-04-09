@@ -5,6 +5,6 @@ ul
 form(on-submit="addWatch")
   fieldset
     legend Add a watch
-    input(name="watchee" placeholder="Name" value="{addWatcheeName}" on-change="updateName")
-    input(name="ep" placeholder="Episode" value="{addWatcheeEp}" on-change="updateEp")
+    input(name="watchee" placeholder="Name" on-change="updateName")
+    input(name="ep" placeholder="Episode" on-change="updateEp")
     input(type="submit")

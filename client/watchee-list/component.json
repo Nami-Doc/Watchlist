@@ -2,10 +2,10 @@
   "scripts": ["index.ls"],
   "templates": ["template.jade"],
   "local": [
-    "watchee-model",
-    "reactive-watchers"
+    "watchee-model"
   ],
   "dependencies": {
-    "component/reactive": "1.1.0"
+    "component/reactive": "1.1.0",
+    "Nami-Doc/reactive-watchers": "0.0.1"
   }
 }

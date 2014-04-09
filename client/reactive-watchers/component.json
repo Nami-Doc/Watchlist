@@ -1,6 +1,0 @@
-{
-  "scripts": ["index.ls"],
-  "dependencies": {
-    "ianstormtaylor/to-pascal-case": "0.0.2"
-  }
-}
