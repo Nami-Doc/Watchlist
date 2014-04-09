@@ -1,27 +1,19 @@
-require! <[ vue
-      watchee-model
+require! <[ reactive
+      watchee-model reactive-watchers
 			./template.html ]>
 
 el = document.getElementById 'container'
+new-model = new watchee-model
+react = new reactive-watchers new-model, <[ name ep ]>
 
 module.exports = (context, next) !->
   el.innerHTML = template!
-  new vue do
-    el: '#container'
-    
-    data:
-      watchees: context.models
-      'new-watchee-name': ''
-      'new-watchee-ep': 0
 
-    ready: !->
-      #@$watch 'watchee', (watchees) !-> # replace all
-
-    methods:
-      add: !->
-        return unless name = @'add-watchee-name'?trim!
-        return unless   ep = @'add-watchee-ep'?trim!
-        return if isNaN ep
-        
-        debugger
-        @watchees.push new watchee-model
+  view = reactive el, context{models},
+    delegate:
+      do
+        add-watch: !->
+          # validate
+          context.models.push new-model
+          react.model = new-model := new watchee-model
+      <<< react.generate!

@@ -1,8 +1,10 @@
 h3 Your watching list
 ul
-  li(v-repeat="watchee : watchees") {{watchee.name()}}
+  li(each="models") {this.name()} (ep. {this.ep()})
 
-fieldset
-  legend Add a watch
-  input(name="watchee" placeholder="Name" v-model="add-watchee-name" v-on="keyup:add | key enter")
-  input(name="ep" placeholder="Episode" v-model="add-watchee-ep" v-on="keyup:add | key enter")
+form(on-submit="addWatch")
+  fieldset
+    legend Add a watch
+    input(name="watchee" placeholder="Name" value="{addWatcheeName}" on-change="updateName")
+    input(name="ep" placeholder="Episode" value="{addWatcheeEp}" on-change="updateEp")
+    input(type="submit")

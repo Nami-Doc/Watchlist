@@ -1,8 +1,11 @@
 {
   "scripts": ["index.ls"],
   "templates": ["template.jade"],
-  "local": ["watchee-model"],
+  "local": [
+    "watchee-model",
+    "reactive-watchers"
+  ],
   "dependencies": {
-    "yyx990803/vue": "v0.10.3"
+    "component/reactive": "1.1.0"
   }
 }

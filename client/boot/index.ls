@@ -5,4 +5,4 @@ module.exports = (div) ->
 	div.innerHTML = template!
 
 	# start routers
-	watchee-router.start!listen!
+	watchee-router.start! # either one : listen!
