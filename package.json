@@ -7,6 +7,7 @@
     "component-serve": "~0.5.2",
     "component-builder": "~0.8.3",
     "component-stylus": "~1.1.3",
-    "component-livescript": "~0.1.1"
+    "component-livescript": "~0.1.1",
+    "component-jade-fixed": "~0.0.1"
   }
 }

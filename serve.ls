@@ -9,7 +9,7 @@ app = express!
 app.use '/build' component-serve do
   root: dir
   plugins:
-    * require './component-jade-fixed'
+    * require 'component-jade-fixed'
     * require 'component-stylus'
     * require 'component-livescript'
   out: 'build'
