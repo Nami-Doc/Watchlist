@@ -8,5 +8,7 @@
   "local": [
     "boot"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "visionmedia/jade": "1.3.x"
+  }
 }
