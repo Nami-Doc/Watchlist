@@ -2,9 +2,8 @@ h3 Your watching list
 ul
   li(each="models") {this.name()} (ep. {this.ep()})
 
-form(on-submit="addWatch")
-  fieldset
-    legend Add a watch
-    input(name="watchee" placeholder="Name" on-change="updateName")
-    input(name="ep" placeholder="Episode" on-change="updateEp")
-    input(type="submit")
+form(on-submit="addWatch"): fieldset
+  legend Add a watch
+  input(name="watchee" placeholder="Name" on-change="updateName")
+  input(name="ep" placeholder="Episode" on-change="updateEp")
+  input(type="submit")
